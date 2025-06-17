@@ -25,8 +25,9 @@
                         <a class="nav-link active" aria-current="page" href="index.html"> Lojinha</a>
                     </div>
                     <div class=" navbar-nav d-flex justify-content-end flex-grow-1 pe-3 " role="search">
-                        <a class="text-decoration-none text-black" href="pages/login.html"><img src="images/login.svg" alt="icone de login">Fazer cadastro/Login</a>
-                </div>
+                        <a class="text-decoration-none text-black" href="pages/login.html"><img src="images/login.svg"
+                                alt="icone de login">Fazer cadastro/Login</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -35,45 +36,155 @@
     <main>
         <div id="banner"></div>
 
-        <section id="grupoProdutos">
-            <h1 class="text-center">MELHORES PRODUTOS</h1>
-<!-- este tem o link para o catalogo -->
-            <div id="produtos">
-                <div class="produto">
-                    <a href="pages/catalogo.html">
-                        <img src="images/produto1.jpg" alt="Caixa de Transporte para Cães e Gatos">
-                        <p>Caixa de Transporte Furacão Pet Joy Marrom para Cães e Gatos</p>
-                        <h4>R$ 50,99</h4>
-                    </a>
-                </div>
-                <div class="produto">
-                    <a href="#">
-                        <img src="images/produto2.jpg" alt="Cinto de segurança para cães">
-                        <p>Cinto de Segurança Toh para Cães Fiji</p>
-                        <h4>R$ 38,90</h4>
-                    </a>
-                </div>
-                <div class="produto">
-                    <a href="#">
-                        <img src="images/produto3.jpg" alt="Osso natural para cães">
-                        <p>Osso Goodbite Natural para Cães Sabor Presunto</p>
-                        <h4>R$ 26,99</h4>
-                    </a>
-                </div>
-                <div class="produto">
-                    <a href="#">
-                        <img src="images/produto4.jpg" alt="Casinha pet ecológica">
-                        <p>Casinha Recriar Pet para Cães Iglu Ecológica</p>
-                        <h4>R$ 79,00</h4>
-                    </a>
-                </div>
-            </div> 
-            
-        </section>
 
+        <div class="p-5 gap-3 d-flex flex-row justify-content-center">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                class="border-secondary-subtle border-end w-25 scrollspy-example" tabindex="0">
+                <h3>CATEGORIA DE PRODUTOS</h3>
+                <div class="form-check pt-5">
+                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                    <label class="form-check-label" for="checkDefault">
+                        Cachorros
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                    <label class="form-check-label" for="checkChecked">
+                        Gatos
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                    <label class="form-check-label" for="checkChecked">
+                        Passáros
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                    <label class="form-check-label" for="checkChecked">
+                        Peixes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                    <label class="form-check-label" for="checkChecked">
+                        Outros Pets
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                    <label class="form-check-label" for="checkChecked">
+                        Casa&Jardim
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                    <label class="form-check-label" for="checkChecked">
+                        Promoções
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                    <label class="form-check-label" for="checkChecked">
+                        Serviços
+                    </label>
+                </div>
+            </div>
+
+
+
+            <section id="grupoProdutos">
+                <h1 class="text-center">MELHORES PRODUTOS</h1>
+                <!-- este tem o link para o catalogo -->
+                <div  class="p-3" id="produtos">
+                    <div class="produto">
+                        <a href="pages/catalogo.html">
+                            <img src="images/produto1.jpg" alt="Caixa de Transporte para Cães e Gatos">
+                            <p>Caixa de Transporte Furacão Pet Joy Marrom para Cães e Gatos</p>
+                            <h4>R$ 50,99</h4>
+                        </a>
+                    </div>
+                    <div class="produto">
+                        <a href="#">
+                            <img src="images/produto2.jpg" alt="Cinto de segurança para cães">
+                            <p>Cinto de Segurança Toh para Cães Fiji</p>
+                            <h4>R$ 38,90</h4>
+                        </a>
+                    </div>
+                    <div class="produto">
+                        <a href="#">
+                            <img src="images/produto3.jpg" alt="Osso natural para cães">
+                            <p>Osso Goodbite Natural para Cães Sabor Presunto</p>
+                            <h4>R$ 26,99</h4>
+                        </a>
+                    </div>
+                    <div class="produto">
+                        <a href="#">
+                            <img src="images/produto4.jpg" alt="Casinha pet ecológica">
+                            <p>Casinha Recriar Pet para Cães Iglu Ecológica</p>
+                            <h4>R$ 79,00</h4>
+                        </a>
+                    </div>
+                </div>
+                <div id="produtos">
+                    <div class="produto">
+                        <a href="pages/catalogo.html">
+                            <img src="images/produto1.jpg" alt="Caixa de Transporte para Cães e Gatos">
+                            <p>Caixa de Transporte Furacão Pet Joy Marrom para Cães e Gatos</p>
+                            <h4>R$ 50,99</h4>
+                        </a>
+                    </div>
+                    <div class="produto">
+                        <a href="#">
+                            <img src="images/produto2.jpg" alt="Cinto de segurança para cães">
+                            <p>Cinto de Segurança Toh para Cães Fiji</p>
+                            <h4>R$ 38,90</h4>
+                        </a>
+                    </div>
+                    <div class="produto">
+                        <a href="#">
+                            <img src="images/produto3.jpg" alt="Osso natural para cães">
+                            <p>Osso Goodbite Natural para Cães Sabor Presunto</p>
+                            <h4>R$ 26,99</h4>
+                        </a>
+                    </div>
+                    <div class="produto">
+                        <a href="#">
+                            <img src="images/produto4.jpg" alt="Casinha pet ecológica">
+                            <p>Casinha Recriar Pet para Cães Iglu Ecológica</p>
+                            <h4>R$ 79,00</h4>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!-- mais informaçoes -->
+        <section id="maisInformacoes">
+            <h1 class="text-center" >EXPLORE MAIS</h1>
+            <div id="informacoes">
+                <div class="inf">
+                    <img src="images/pagseg.svg" alt="icone de pagamento">
+                    <p>Pagamento seguro</p>
+                </div>
+                <div class="inf">
+                    <img src="images/suporte.svg" alt="icone de suporte">
+                    <p>Suporte 24 horas</p>
+                </div>
+                <div class="inf">
+                    <img src="images/reembolso.svg" alt="icone de reembolso">
+                    <p>Não gostou? Reembolso 100%</p>
+                </div>
+                <div class="inf">
+                    <img src="images/frete.svg" alt="icone de um caminhão">
+                    <p>Frete Grátis acima de R$100 </p>
+                </div>
+            </div>
+
+        </section>
     </main>
 
-    <footer class="bg-dark text-white">
+    <footer class="bg-body-tertiary text-black">
         <div class="d-flex flex-row mb-3 p-3">
             <div class="topcs p-5">
                 <h5>CONTATOS</h5>
@@ -82,7 +193,7 @@
             </div>
             <div class="topcs p-5">
                 <h5>SOBRE A CONTA</h5>
-                <a class="text-decoration-none text-white " href="#">Fazer login</a>
+                <a class="text-decoration-none text-black " href="#">Fazer login</a>
             </div>
         </div>
         <p class="text-center">&copy;Todos os direitos reservados a @Loginha2025</p>
