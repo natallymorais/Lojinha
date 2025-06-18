@@ -3,7 +3,11 @@
     padding: 0%;
 }
 
-
+@media only screen and (min-width: 600px){
+    body{
+        display: flex;
+    }
+}
 #banner{
     background-image: url(../images/banner.jpg);
     background-size:contain;
